@@ -16,10 +16,6 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/Bro-Teach/rdp/master/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Bro-Teach/rdp/master/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Bro-Teach/rdp/master/loop.bat -OutFile loop.bat
-    - name: Download Launcher.
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/Bro-Teach/rdp/master/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/Bro-Teach/rdp/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Account Ngrok.
